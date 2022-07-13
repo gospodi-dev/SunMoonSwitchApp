@@ -68,7 +68,9 @@
                     </view>
                     <connections>
                         <outlet property="changeButton" destination="qTk-5A-Xv1" id="QNw-ca-2rA"/>
+                        <outlet property="moonSwitch" destination="Pby-C3-Gju" id="XYL-eh-o7z"/>
                         <outlet property="skyImageView" destination="A9A-Eo-zmU" id="efk-4Z-bh6"/>
+                        <outlet property="sunSwitch" destination="Yyf-Bm-bni" id="awN-mI-8c0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -10,8 +10,11 @@ import UIKit
 class SwitchViewController: UIViewController {
     
     @IBOutlet weak var skyImageView: UIImageView!
+    @IBOutlet weak var changeButton: UIButton!
     
-
+    @IBOutlet weak var sunSwitch: UISwitch!
+    @IBOutlet weak var moonSwitch: UISwitch!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
