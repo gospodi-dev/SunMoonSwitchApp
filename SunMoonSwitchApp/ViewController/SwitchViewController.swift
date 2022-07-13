@@ -7,6 +7,8 @@
 
 import UIKit
 
+var isSun: Bool = false
+
 class SwitchViewController: UIViewController {
     
     @IBOutlet weak var skyImageView: UIImageView!
@@ -18,12 +20,17 @@ class SwitchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        skyImageView.image = UIImage(systemName: "moon")
-        skyImageView.tintColor = .gray
     }
     
     @IBAction func buttonDidTap(_ sender: Any) {
-        print("Кнопка")
+        if isSun {
+            skyImageView.image = UIImage(systemName: "moon")
+            skyImageView.tintColor = .gray
+        } else {
+            skyImageView.image = UIImage(systemName: "sun.max")
+            skyImageView.tintColor = .systemYellow
+        }
+        isSun.toggle()
     }
     
     @IBAction func sunSwitchDidTap(_ sender: Any) {
