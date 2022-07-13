@@ -31,13 +31,13 @@
                                     <constraint firstAttribute="height" constant="373.5" id="70O-u7-h44"/>
                                 </constraints>
                             </imageView>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yyf-Bm-bni">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Yyf-Bm-bni">
                                 <rect key="frame" x="74" y="629" width="51" height="31"/>
                                 <connections>
                                     <action selector="sunSwitchDidTap:" destination="BYZ-38-t0r" eventType="valueChanged" id="igq-Y2-mk2"/>
                                 </connections>
                             </switch>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pby-C3-Gju">
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Pby-C3-Gju">
                                 <rect key="frame" x="293" y="629" width="51" height="31"/>
                                 <connections>
                                     <action selector="moonSwitchDidTap:" destination="BYZ-38-t0r" eventType="valueChanged" id="q8v-CF-fqd"/>

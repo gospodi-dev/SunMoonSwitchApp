@@ -8,6 +8,8 @@
 import UIKit
 
 var isSun: Bool = false
+var isOn: Bool = false
+
 
 class SwitchViewController: UIViewController {
     
@@ -34,13 +36,24 @@ class SwitchViewController: UIViewController {
     }
     
     @IBAction func sunSwitchDidTap(_ sender: Any) {
-        print("Переключатель Солнце")
+        if sunSwitch.isOn {
+            skyImageView.image = UIImage(systemName: "sun.max")
+            skyImageView.tintColor = .systemYellow
+        } else {
+            skyImageView.image = UIImage(systemName: "moon")
+            skyImageView.tintColor = .gray
+        }
     }
     
     @IBAction func moonSwitchDidTap(_ sender: Any) {
-        print("Переключатель Луна")
+        if moonSwitch.isOn {
+            skyImageView.image = UIImage(systemName: "moon")
+            skyImageView.tintColor = .gray
+        } else {
+            skyImageView.image = UIImage(systemName: "sun.max")
+            skyImageView.tintColor = .systemYellow
+        }
     }
-    
-    
+
 }
 
