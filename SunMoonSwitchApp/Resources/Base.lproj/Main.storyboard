@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Switch View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SunMoonSwitchApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SwitchViewController" customModule="SunMoonSwitchApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -60,12 +60,16 @@
                             <constraint firstItem="A9A-Eo-zmU" firstAttribute="leading" secondItem="qTk-5A-Xv1" secondAttribute="leading" id="UP7-Xk-3hz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qTk-5A-Xv1" secondAttribute="bottom" constant="84" id="UvJ-zY-bgL"/>
                             <constraint firstItem="A9A-Eo-zmU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="aZu-S6-CaQ"/>
+                            <constraint firstItem="6ro-0P-9Qv" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="zhO-oB-KAU" secondAttribute="trailing" constant="8" symbolic="YES" id="acP-xi-HU2"/>
                             <constraint firstItem="Pby-C3-Gju" firstAttribute="centerX" secondItem="6ro-0P-9Qv" secondAttribute="centerX" id="hNf-cv-MlU"/>
                             <constraint firstItem="Yyf-Bm-bni" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="74" id="kbU-TT-5He"/>
                             <constraint firstItem="A9A-Eo-zmU" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="xTs-4w-gjN"/>
                             <constraint firstItem="Yyf-Bm-bni" firstAttribute="top" secondItem="Pby-C3-Gju" secondAttribute="top" id="zXg-sB-gj2"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="skyImageView" destination="A9A-Eo-zmU" id="efk-4Z-bh6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

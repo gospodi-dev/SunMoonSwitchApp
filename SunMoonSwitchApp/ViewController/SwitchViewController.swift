@@ -7,13 +7,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SwitchViewController: UIViewController {
+    
+    @IBOutlet weak var skyImageView: UIImageView!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
 }
 
