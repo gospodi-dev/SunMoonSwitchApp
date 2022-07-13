@@ -18,6 +18,10 @@ class SwitchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        skyImageView.image = UIImage(systemName: "moon")
+        skyImageView.tintColor = .gray
+        
+        changeButton.tintColor = .blue
     }
 }
 
