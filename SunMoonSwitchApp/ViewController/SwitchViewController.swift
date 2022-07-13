@@ -23,15 +23,15 @@ class SwitchViewController: UIViewController {
     }
     
     @IBAction func buttonDidTap(_ sender: Any) {
-        
+        print("Кнопка")
     }
     
     @IBAction func sunSwitchDidTap(_ sender: Any) {
-        
+        print("Переключатель Солнце")
     }
     
     @IBAction func moonSwitchDidTap(_ sender: Any) {
-        
+        print("Переключатель Луна")
     }
     
     
