@@ -20,8 +20,20 @@ class SwitchViewController: UIViewController {
         // Do any additional setup after loading the view.
         skyImageView.image = UIImage(systemName: "moon")
         skyImageView.tintColor = .gray
-        
-        changeButton.tintColor = .blue
     }
+    
+    @IBAction func buttonDidTap(_ sender: Any) {
+        
+    }
+    
+    @IBAction func sunSwitchDidTap(_ sender: Any) {
+        
+    }
+    
+    @IBAction func moonSwitchDidTap(_ sender: Any) {
+        
+    }
+    
+    
 }
 
