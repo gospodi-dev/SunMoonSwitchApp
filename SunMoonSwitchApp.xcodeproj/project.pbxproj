@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		CCA50295287ED75100B39F75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA50294287ED75100B39F75 /* AppDelegate.swift */; };
 		CCA50297287ED75100B39F75 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA50296287ED75100B39F75 /* SceneDelegate.swift */; };
-		CCA50299287ED75100B39F75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA50298287ED75100B39F75 /* ViewController.swift */; };
+		CCA50299287ED75100B39F75 /* SwitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCA50298287ED75100B39F75 /* SwitchViewController.swift */; };
 		CCA5029C287ED75100B39F75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCA5029A287ED75100B39F75 /* Main.storyboard */; };
 		CCA5029E287ED75200B39F75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCA5029D287ED75200B39F75 /* Assets.xcassets */; };
 		CCA502A1287ED75200B39F75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCA5029F287ED75200B39F75 /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		CCA50291287ED75100B39F75 /* SunMoonSwitchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SunMoonSwitchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCA50294287ED75100B39F75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCA50296287ED75100B39F75 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CCA50298287ED75100B39F75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CCA50298287ED75100B39F75 /* SwitchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchViewController.swift; sourceTree = "<group>"; };
 		CCA5029B287ED75100B39F75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CCA5029D287ED75200B39F75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CCA502A0287ED75200B39F75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,15 +56,31 @@
 		CCA50293287ED75100B39F75 /* SunMoonSwitchApp */ = {
 			isa = PBXGroup;
 			children = (
+				CCA502A9287ED8E300B39F75 /* ViewController */,
+				CCA502A8287ED8B700B39F75 /* Resources */,
 				CCA50294287ED75100B39F75 /* AppDelegate.swift */,
 				CCA50296287ED75100B39F75 /* SceneDelegate.swift */,
-				CCA50298287ED75100B39F75 /* ViewController.swift */,
-				CCA5029A287ED75100B39F75 /* Main.storyboard */,
-				CCA5029D287ED75200B39F75 /* Assets.xcassets */,
-				CCA5029F287ED75200B39F75 /* LaunchScreen.storyboard */,
 				CCA502A2287ED75200B39F75 /* Info.plist */,
 			);
 			path = SunMoonSwitchApp;
+			sourceTree = "<group>";
+		};
+		CCA502A8287ED8B700B39F75 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CCA5029A287ED75100B39F75 /* Main.storyboard */,
+				CCA5029D287ED75200B39F75 /* Assets.xcassets */,
+				CCA5029F287ED75200B39F75 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CCA502A9287ED8E300B39F75 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CCA50298287ED75100B39F75 /* SwitchViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCA50299287ED75100B39F75 /* ViewController.swift in Sources */,
+				CCA50299287ED75100B39F75 /* SwitchViewController.swift in Sources */,
 				CCA50295287ED75100B39F75 /* AppDelegate.swift in Sources */,
 				CCA50297287ED75100B39F75 /* SceneDelegate.swift in Sources */,
 			);
@@ -293,8 +309,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -321,8 +339,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
